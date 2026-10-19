@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "defaultStrategy": "RISK_AWARE_BUDGETED",
+  "defaultBudgetMs": 500,
+  "riskWeights": {
+    "w1ImpactRelevance": 0.35,
+    "w2FailureSignal": 0.25,
+    "w3ChangeCoverage": 0.25,
+    "w4UncertaintyAdjustment": 0.15
+  },
+  "history": {
+    "recencyDecayFactor": 0.85,
+    "useRecencyWeighting": true,
+    "uninformativePrior": 0.50,
+    "fallbackTestDurationMs": 50
+  },
+  "caching": {
+    "enabled": true,
+    "cacheDirectory": ".changeimpact_cache"
+  },
+  "graph": {
+    "treatCyclesAsError": false,
+    "cycleSafeTraversal": true
+  }
+}

@@ -1,0 +1,7 @@
+target/
+.changeimpact_cache/
+*.class
+*.log
+.idea/
+*.iml
+.vscode/
